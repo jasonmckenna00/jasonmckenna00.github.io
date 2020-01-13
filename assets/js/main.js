@@ -119,8 +119,8 @@
 
 					// Redirect.
 						window.setTimeout(function() {
-							window.location.href = href;
-						}, 350);
+							window.open(href);
+						}, 10);
 
 				});
 
