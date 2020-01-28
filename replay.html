@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Generic - Solid State by HTML5 UP</title>
+		<title>RePlay - Jason McKenna</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,7 +19,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="index.html">Solid State</a></h1>
+						<h1><a href="index.html">Jason McKenna</a></h1>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -31,10 +31,10 @@
 							<h2>Menu</h2>
 							<ul class="links">
 								<li><a href="index.html">Home</a></li>
-								<li><a href="generic.html">Generic</a></li>
+								<!-- <li><a href="generic.html">Generic</a></li>
 								<li><a href="elements.html">Elements</a></li>
 								<li><a href="#">Log In</a></li>
-								<li><a href="#">Sign Up</a></li>
+								<li><a href="#">Sign Up</a></li> -->
 							</ul>
 							<a href="#" class="close">Close</a>
 						</div>
@@ -44,8 +44,8 @@
 					<section id="wrapper">
 						<header>
 							<div class="inner">
-								<h2>Generic</h2>
-								<p>Phasellus non pulvinar erat. Fusce tincidunt nisl eget ipsum.</p>
+								<h2>RePlay</h2>
+								<p>A pixel-perfect clone of YouTube where users can: post, view, like, or comment, on other user’s videos</p>
 							</div>
 						</header>
 
@@ -53,27 +53,43 @@
 							<div class="wrapper">
 								<div class="inner">
 
-									<h3 class="major">Lorem ipsum dolor</h3>
-									<p>Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien.</p>
-
-									<p>Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam. Proin nec commodo, vel scelerisque nisi scelerisque. Suspendisse id quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec felis elementum varius.</p>
-
-									<h3 class="major">Vitae phasellus</h3>
-									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-
+									<h3 class="major">About</h3>
+									<p>Replay is a video sharing website where users can upload videos and view content posted by others. Signed in users are allowed to leave comments or like a video while non-logged in users are limited to only viewing. Videos and comments are protected with user authentication to prevent users from editing/removing content that isn't theirs. The app utilizes the React-Redux cycle with a Ruby on Rails backend configuration for datebase validations. Videos and images are stored using AWS-S3 cloud-storage and the server is hosted by Heroku.</p>
+									<a href="https://replay-videos.herokuapp.com/#/" target="_blank">Link to Site</a>
+									<br>
+									<a href="https://github.com/jasonmckenna00/Replay" target="_blank">Link to Repo</a>
+									<h3 class="major">Functionality & MVP</h3>
+									<ul>
+										<li>New account creation, login, and guest/demo login</li>
+										<li>Video upload and playback feature</li>
+										<li>Users will be able to post comments on videos</li>
+										<li>Videos and comments will include a 'Like' feature</li>
+									</ul>
+									<i>BONUS</i>
+									<ul>
+										<li>Videos will have a live count of the number of times a video has been viewed</li>
+										<li>Users will be able to search videos by title and user</li>
+										<li>Users will be able to subscribe to other users and follow their posting activity</li>
+									</ul>
 									<section class="features">
 										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3 class="major">Sed feugiat lorem</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
+											<a href="images/youtube-login.png" class="image" target="_blank"><img src="images/youtube-login.png" alt="" /></a>
+											<h3 class="major">Custom User Auth with Error Handling</h3>
+											<p>Users are able to create and account and be logged into across sessions and refresh</p>
+											<!-- <a href="#" class="special">Learn more</a> -->
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+											<a href="images/youtube-fetching.png" class="image" target="_blank"><img src="images/youtube-fetching.png" alt="" /></a>
+											<h3 class="major">Eager Loading to Minimize hits to the Database</h3>
+											<p>Utilized Rails polymorphic associations and eager-loading to optimize querying techniques and minimized requests to the database; thus improving scalability.</p>
+											<!-- <a href="#" class="special">Learn more</a> -->
+										</article>
+										<!-- <article>
+											<a href="#" class="image" target="_blank"><img src="images/pic05.jpg" alt="" /></a>
 											<h3 class="major">Nisl placerat</h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
 											<a href="#" class="special">Learn more</a>
-										</article>
+										</article> -->
 									</section>
 
 								</div>
@@ -85,8 +101,8 @@
 					<section id="footer">
 						<div class="inner">
 							<h2 class="major">Get in touch</h2>
-							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-							<form method="post" action="#">
+							<p>Feel free to contact me if you would like to speak about future employment. Open to recruiters</p>
+							<!-- <form method="post" action="#">
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
@@ -104,21 +120,21 @@
 								<ul class="actions">
 									<li><input type="submit" value="Send Message" /></li>
 								</ul>
-							</form>
+							</form> -->
 							<ul class="contact">
 								<li class="icon solid fa-home">
-									Untitled Inc<br />
-									1234 Somewhere Road Suite #2894<br />
-									Nashville, TN 00000-0000
+									Jason McKenna<br />
+									Greater New York Area<br />
+									New York, NY 
 								</li>
-								<li class="icon solid fa-phone">(000) 000-0000</li>
-								<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
+								<li class="icon solid fa-phone">(631) 838-0200</li>
+								<li class="icon solid fa-envelope">jasonmckenna00@gmail.com</li>
+								<li class="icon brands fa-github"><a href="https://github.com/jasonmckenna00"  target='_blank'>Github</a></li>
+								<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/jason-mckenna-69b5a1117/"  target='_blank'>LinkedIn</a></li>
+								<li class="icon brands fa-angellist"><a href="https://angel.co/jason-mckenna-4"  target='_blank'>Angel List</a></li>
 							</ul>
 							<ul class="copyright">
-								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; Jason McKenna All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</section>
